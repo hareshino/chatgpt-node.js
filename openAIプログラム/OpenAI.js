@@ -22,7 +22,7 @@ readInterface.question("入力してください >",
     model: "gpt-3.5-turbo",
     messages: [{ role: "user", content: inputString }],
   });
-  console.log(completion.data.choices[0].message);
+  console.log(completion.data.choices[0].message.content);
 })();
 
 });
